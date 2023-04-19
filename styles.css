@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "ceraroundpro-regular";
+    src: url("fonts/Fontspring-DEMO-ceraroundpro-regular.otf");
+}
+
+@font-face {
+    font-family: "ceraroundpro-bold";
+    src: url("fonts/Fontspring-DEMO-ceraroundpro-bold.otf");
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 20px auto;
+}
+
+ul {
+    display: flex;
+    flex: 1;  /* This is what made space-between work properly */
+    align-items: center; 
+    list-style: none;
+    color: rgb(100, 100, 100);
+    font-size: 20px;
+}
+
+li {
+    display: flex;
+    margin: 0 20px;
+}
+
+.fa-font-awesome {
+    display: flex;
+    margin-right: 25px;
+}
+
+.search-icon {
+    height: 50px;
+    padding: 0;
+    object-fit: cover;
+    
+}
+
+.exit-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+/*Section 1 */
+.hiring {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 1100px;
+   background-color: rgb(255, 212, 59);
+   height: 90px;
+   margin: 10px auto;
+   border-radius: 15px;
+}
+
+.job-btn {
+    padding: 12px;
+    margin-right: 25px;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 0px 4px;;
+    border-radius: 10px;
+    font-family: "ceraroundpro-regular";
+}
+
+.hiring p {
+    font-family: "ceraroundpro-regular";
+    font-size: 16px;
+}
+
+.hiring-text {
+    font-family: "ceraroundpro-bold", 
+}
+
+.exclam { 
+    font-family: "cursive";
+    font-weight: 600;
+}
+
+/* Search Section*/
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 65px auto 0px auto;
+    width: 550px;
+    height: 65px;
+    border-radius: 50px;
+    border: 2px solid #000;
+    font-size: 16px;
+
+}
+
+input {
+    border: none;
+    font-size: 16px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    margin-left: 13px;
+}
+
+.algolia {
+    margin-right: 25px;
+    color: rgb(100, 100, 100);
+}
+
+.examples-container {
+    margin: 15px auto;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 480px;
+}
+
+.examples {
+    font-family: "ceraroundpro-regular";
+    font-size: 14px;
+}
+
+.examples-container a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Icon Section */
+
+.icon-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+
+.icons {
+    display: flex;
+    margin: 25px auto;
+    font-size: 18px;
+}
+
+.icon-info {
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    margin: 5px 35px; 
+    font-family: "ceraroundpro-regular";
+    align-items: center;
+    text-align: center; 
+    
+}
+
+.icon-info strong {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 16px;
+    font-weight: 900;
+}
+
+.icon-info span {
+    color:rgb(100, 100, 100);
+}
+
+.icon-info:hover {
+    color: #74c0fc;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Feature Cards */
+.feature-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    width: 1100px;
+    
+    
+}
+
+.feature-card {
+    display: flex;
+    height: 250px;
+    width: 325px;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none;
+    color: #183153;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family: "ceraroundpro-regular", sans-serif;
+    margin-bottom: 90px;
+    
+}
+
+.feature-card:hover {
+    box-shadow: 0px 4px 0px 0px;
+}
+
+.card-1 {
+    background-color: #e599f7;
+}
+
+.card-2 {
+    background-color: #74c0fc;
+}
+
+.card-3 {
+    background-color: #63e6be;
+}
+
+.feature-card-container {
+    display: block;
+    box-shadow: 1px 4px 3px rgba(0,0,0,.1);
+    margin: 30px 0px;
+}
+
+/* New Content */
+.new {
+    display: flex;
+    margin: 20px auto;
+    width: 1100px;
+    justify-content: space-between;
+
+}
+
+.new-content-1 {
+    display: flex;
+    flex-direction: column;
+    font-family: "ceraroundpro-regular";
+}
+
+.new-icon-button {
+    display: flex;
+    padding: 20px;
+    background: none;
+    border: 2px solid #f0f1f3;
+    border-radius: 10px;
+    width: 250px;
+    color: #183153;
+    font-family: "ceraroundpro-regular";
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+
+}
+
+/* Pro Icons */
+.background-wrapper {
+    padding: 90px;
+}
+
+.pro-icons {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    border-radius: 15px;
+    height: 120px;
+    width: 1100px;
+    background-color: #74c0fc;
+    box-shadow: rgb(20, 110, 190) 0px 8px 0px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 170px; /* Seems like there is a better way to position the text. Maybe add a container div with less width. */
+    font-family: "ceraroundpro-regular";
+
+}
+
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 60px auto;
+}
+
+.categories-text {
+    display: flex;
+    flex-direction: column;
+    color: #183153;
+    font-family: "ceraroundpro-regular";
+}
+
+.categories-button { /* Add hover effect */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #c3c6d1;
+    background: none;
+    color: #183153;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "ceraroundpro-regular";
+}
+
+.categories-cards-top {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 200px;
+    height: 125px;
+    background-color: #183153;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #183153;
+    font-family: "ceraroundpro-regular";
+    width: 200px;
+    height: 60px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: #c3c6d1 0px 6px 0px 0px;
+}
+
+.categories-cards-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1100px;
+    overflow: hidden;
+}
+
+.categories-cards-bottom a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 55px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    margin: 35px 0px;
+    text-decoration: none;
+    padding-left: 80px;
+    overflow: hidden;
+    
+}
+
+.categories-cards-bottom a span { /* This can be better */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:#183153;
+    font-family: "ceraroundpro-regular";
+}
+
+.styles-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 40px auto;
+    width: 1100px;
+    flex-direction: column;
+    font-family: "ceraroundpro-regular";
+    color:#183153;
+    
+}
+
+.styles-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0px auto;
+    width: 1100px;
+    flex-direction: column;
+    font-family: "ceraroundpro-regular";
+    color:#183153;
+    
+}
+
+.styles-2 h4 {
+    color: #5f697d;
+    font-family: "ceraroundpro-regular";
+}
+
+/* Sharp Section */
+.sharp-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 50px auto;
+}
+
+.sharp-new {
+    background-color: #ffffff;
+    color: #183153;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 55px;
+    position: absolute;
+    top: -15px;
+    right: 50px;
+    z-index: 1;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: "ceraroundpro-regular";
+}
+
+.sharp-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    height: 180px;
+    width: 265px;
+    clip-path: polygon(0 0, 82% 0, 100% 100%, 0% 100%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    z-index: 1;
+    position: absolute;
+    text-decoration: none;
+    
+}
+
+.sharp-content span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #63e6be;
+    color: #183153;
+    width: 75px;
+    height: 30px;
+    letter-spacing: .1rem;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.sharp-content h4 {
+    padding: 5px 0px 8px 0px;
+    color: #183153;
+    letter-spacing: .1rem;
+    font-size: 16px;
+}
+
+.sharp-content p {
+    color:rgb(100, 100, 100);
+}
+
+.navy-bg {
+    width: 530px;
+    height: 180px;
+    background-color: #183153;
+    border-radius: 15px;
+    z-index: 0;
+    position: relative;
+}
+
+.blue-bg {
+    background-color: #74c0fc !important;
+}
+
+.navy-bg-large {
+    background-color: #183153;
+    border-radius: 15px;
+    z-index: 0;
+    position: relative;
+    width: 1100px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.pink-bg {
+    background-color:#e599f7 !important;
+}
+
+.dashed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #cbced7;    
+    width: 1100px;
+    height: 80px;
+    margin: 15px auto;
+    padding: 10px;
+
+}
+
+.classic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 50px auto;
+    font-size: 20px;
+    color:#5f697d;
+    width: 1100px;
+
+}
+
+.classic p {
+    font-size: 18px;
+    color:rgb(100, 100, 100)
+}
+
+.bg { /* Why didn't I do this 531 lines ago...?*/
+    width: 530px;
+    height: 180px;
+    background-color: #183153;
+    border-radius: 15px;
+    z-index: 0;
+    position: relative;
+}
+
+.grey-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.grey-bg {
+    width: 1100px;
+    height: 180px;
+    background-color: #183153;
+    border-radius: 15px;
+    z-index: 0;
+    position: relative;
+    
+}
+
+.brand-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto 10px auto;
+    width: 1100px;
+}
+
+.brand {
+    display: flex;
+    font-size: 18px;
+}
+
+.get-started-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.grid-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.brands-icon-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 128px);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 34px;
+    margin: 35px auto;
+}
+
+.brand-card {
+    display: flex;
+    flex: 1;
+    width: 130px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    color: #183153;
+    
+}
+
+
+
+
+
+
+
+
+
+
